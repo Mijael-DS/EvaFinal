@@ -1,0 +1,485 @@
+/* DISEÑO */
+/* video section */
+.video-seccion {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.video-container::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.contenido-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.contenido-video h1 {
+    font-size: 3em;
+    font-family: "Faculty Glyphic", sans-serif;
+    padding: 1rem;
+}
+
+.ingresar {
+    background-color: #8E44AD; 
+    color: #000000;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all ease-in-out 500ms;
+}
+
+.ingresar:hover {
+    background-color: #2C3E50; 
+    color: #FFFFFF;
+    transition: all 500ms ease-in;
+    padding: 1rem;
+    scale: 0.9;
+}
+
+/* main */
+
+.section-image {
+    height: 100%;
+    /* object-fit: cover; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 300ms ease-in;
+}
+
+.section-image:hover {
+    scale: 0.9;
+    transition: all 300ms ease-in;
+}
+
+.section-container .sect-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.section-container .design-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* height: 100%; */
+    padding: 1rem;  
+    text-align: center;
+    color: #2C3E50;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.design-content p {
+    font-size: 1.5em;
+}
+
+.section-container {
+    height: 30%;  /* Altura mínima */
+}
+
+.btn {
+    color: #FFFFFF !important;
+    background-color: #8E44AD !important;
+    transition: all 300ms ease;
+    font-style: italic;
+}
+
+.btn:hover {
+    background-color: #2C3E50 !important;
+    color: #F5F5F5 !important;
+    scale: 0.9;
+    transition: all 300ms ease-in;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* galeria */
+/* Estilo de la galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.gallery-item:hover {
+    /* transform: scale(1.05); */
+    transform: scale(0.9);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.img3 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    
+}
+
+.img4 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.overlay a {
+    color: #F5F5F5;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 300ms ease-in;
+    font-family: Oswald;
+}
+
+.overlay a:hover {
+    background-color: #33333344;
+    /* padding: 0.5rem; */
+    padding: 100%;
+    color: #8E44AD;
+    transition: all 300ms ease-in;
+    border-radius: 8px;
+    font-family: Lora;
+    text-decoration: underline;
+}
+
+.gallery-button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.gallery-button a {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: Roboto;
+    color: #fff;
+    text-decoration: none;
+    background-color: #8E44AD;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.gallery-button a:hover {
+    background-color: #2ECC71;
+    transform: translateY(-5px);
+}
+
+/* FRONTED */
+
+/* seccion uno */
+
+.principal {
+    background-image: url('../img/fronted2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;    
+}
+
+.contenidouno {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.507);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contenidouno h1{
+    margin: 10px 0px;
+    font-family: "Oswald", sans-serif;
+    text-decoration: underline;
+    color: #8E44AD;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+
+
+.contenidouno p{
+    margin: 10px 0px;
+    color: #2ECC71;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.botones {
+    margin: 20px 0px;
+
+}
+
+.button {
+    background-color: #ffffff;
+    color: #8E44AD;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 0 30px;
+    box-shadow: 0px 2px 5px 2px;
+}
+
+.button:hover {
+    background-color: #2ECC71;
+    color: #ffffff;
+    border-radius: 25px;
+    transition: 300ms ease-in all;
+    cursor: help;
+}
+
+/* fronted main  */
+.tech-icon {
+    animation: fadeInDown 1.5s ease-in-out;
+    font-size: 2.5rem;
+    color: #8E44AD;
+    transition: all 300ms ease-in;
+    scale: 1.5;
+    /* padding: 1rem; */
+
+}
+
+a .tech-icon:hover {
+    transform: translateY(-1rem);
+    /* scale: 2; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* transition: all 300ms ease-in; */
+    color: rgb(255, 115, 0);
+    /* box-shadow: 0 2px 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+a .css:hover {
+    color: rgb(0, 89, 255);
+}
+
+a .javascript:hover {
+    color: rgb(241, 241, 37);
+}
+
+/* Progreso */
+
+/* Estilo adicional en las barras de progreso */
+#seccion .progress-bar {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 20px;
+}
+
+.progress-bar {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    animation: progressAnimation 2s ease-in-out infinite; /* Animación continua */
+    width: 0%;
+    /* transition: width 0.3s ease-in-out; */
+}
+
+/* Animación de las barras de progreso */
+@keyframes progressAnimation {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: var(--progress-width); /* Se llena la barra hasta el 100% (o el valor especificado) */
+    }
+    100% {
+        width: var(--progress-width); /* Variable personalizada para el ancho */
+    }
+}
+
+/* Asignación de ancho a cada barra de progreso */
+#seccion .bg-success {
+    --progress-width: 90%;
+}
+
+#seccion .bg-info {
+    --progress-width: 80%;
+}
+
+#seccion .bg-warning {
+    --progress-width: 35%;
+}
+
+/* seccion de ejemplos */
+
+.frontend-section {
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.frontend-section:hover {
+    transform: rotateY(180deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* transform: scale(1.05); */ /* Ampliar */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Más sombra */
+}
+
+.frontend-section img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-container {
+    min-height: 70vh;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+
+/* Sección Beneficios */
+
+/* Estilos de los íconos dentro de las cards */
+#benefits i {
+    transition: all 0.3s ease;
+    font-size: 3rem;
+    color: #4F4F4F;
+}
+
+#benefits i:hover {
+    transform: scale(1.2); /* Efecto de aumentar el ícono */
+    color: #F5F5F5; /* Cambiar color al hacer hover */
+}
+
+/* Títulos de las cards */
+#benefits .card-title {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #8E44AD;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+
+/* Texto de las cards */
+#benefits .card-text {
+    font-size: 1rem;
+    color: #2ECC71;
+}
+
+/* Igualar altura de todas las cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%; /* Asegura que todas las cards tengan la misma altura */
+}
+
+/* Efecto de hover para las cards */
+.card:hover {
+    transform: translateY(-5px); /* Le da un efecto de "elevar" la card */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+
+/* Ajuste para que todas las cards tengan la misma altura */
+.card-body {
+    flex-grow: 1;  /* Hace que el contenido ocupe todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea los elementos dentro de la card */
+}
+
+
+/* Sección Herramientas */
+
+/* Estilo de los contenedores */
+.framework {
+    /* border: solid beige; */
+    padding: 0.5rem;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+
+
+/* Íconos de herramientas */
+.framework i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover en íconos */
+.framework i:hover {
+    transform: scale(1.2);
+    color: #ba23f5; /* Acento naranja */
+    
+}
+
+/* Títulos */
+#tools h5 {
+    font-size: 1.3rem;
+    color: #4A90E2;
+}
+
+/* Texto */
+#tools p {
+    color: #2ECC71;
+}
+
+

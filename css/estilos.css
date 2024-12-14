@@ -1,0 +1,478 @@
+/* Estilos Propios  */    
+
+html {
+  scroll-behavior: smooth;
+  transition: all 300ms ease-in;
+}
+
+body {
+    background-color: #F5F5F5; /* Fondo general */
+    color: #6E6E6E; /* Texto */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+h1, h2, h3 {
+  font-family: oswal;
+  text-decoration: underline;
+  color: #2C3E50;
+}
+
+h4, h5 {
+  font-family: lora;
+  /* color: rgb(175, 87, 229); */
+  color: #4F4F4F;
+}
+
+p, a {
+  font-family: Playfair;
+  /* color: #62a1ff; */
+  color: #2ECC71;
+}
+
+
+
+ header  {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+header .logo img {
+  max-height: 60px;
+}
+
+
+
+.navbar {
+  /* background-color: #1E2A38; */
+  background-color: #2C3E50;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #F5F5F5;
+}
+
+.navbar-brand:hover {
+  color: #2B3C4E;
+}
+
+li .nav-link {
+  /* color: rgb(175, 87, 229); */
+  color: #FFFFFF;
+  transition: all 300ms ease-in;
+} 
+
+.nav-item .nav-link:hover{
+  scale: 1.1;
+  color: #8E44AD;
+  transition: all 300ms ease-in;
+}
+
+li .nav-link i{
+  padding: 5px;
+}
+
+/* Personalización del menú hamburguesa */
+.navbar-toggler {
+  /* border: none; */ /* Elimina el borde del botón */
+  background-color: transparent; /* Fondo transparente */
+}
+
+.navbar-toggler-icon {
+  background-image: none; /* Elimina la imagen predeterminada */
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff; /* Color blanco para las líneas */
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff; /* Color blanco para las líneas superiores e inferiores */
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-color: #ff9900; /* Cambia el color de la línea central al pasar el mouse */
+}
+
+.navbar-toggler:hover .navbar-toggler-icon::before,
+.navbar-toggler:hover .navbar-toggler-icon::after {
+  background-color: #ff9900; /* Cambia el color de las líneas superiores e inferiores al pasar el mouse */
+}
+
+ 
+/* main */
+
+.slide {
+  height: 100vh;
+}
+
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+}
+
+.carousel-image {
+    background-image: url(../img/farzad-p-xSl33Wxyc-unsplash.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.img2 {
+  background-image: url(../img/nathan-da-silva-k-rKfqSm4L4-unsplash.jpg);
+}
+
+.carousel-image::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.658);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 20%;
+  /* width: 100%;  */
+  /* transform: translate(-50%, -50%); */
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para destacar el texto */
+  text-align: center;
+  animation: fadeInDown 1.5s ease-in-out;
+}
+
+.carousel-caption h1 {
+  color: #FFFFFF;
+  padding: 1rem;
+  font-size: 3em;
+  font-family: Oswald;
+}
+
+.carousel-caption h2 {
+  color: #FFFFFF;
+  font-size: 2.5em;
+  font-family: Playfair;
+}
+
+.carousel-caption p {
+  color: #2ECC71;
+  padding: 1rem;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.carousel-caption a {
+  color: #F5F5F5;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 300ms ease-in;
+  font-size: 1em;
+  font-family: Lora;
+  background-color: #2B3C4E;
+}
+
+.carousel-caption a:hover {
+  transition: 300ms all ease-in;
+  scale: 1.1;
+  background-color: #F5F5F5;
+  color: #6F3486; 
+  border-radius: 2%;
+  padding: 0.5rem 1rem;
+}
+
+/* seccion nosotros */
+
+section {
+  background-color: #F5F5F5;
+} 
+
+section h2 {
+  color: #2C3E50;
+  font-family: Oswald;
+}
+
+/* service card */
+
+#about, #services, #portfolio {
+  background-color: #F5F5F5;
+  color: #2C3E50;
+  padding: 2rem; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Oswald;
+}
+
+
+.video-text {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+video {
+  border-radius: 4%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.nosotros h2 {
+  color: #2C3E50;
+  opacity: 2;
+  font-family: Oswald;
+}
+
+.nosotros p {
+ color: #6E6E6E;
+
+}
+
+/* grid card */
+
+.section-title {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.custom-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  background-color: #2C3E50;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.281); 
+  transition: all 300ms ease-in;
+  transform: rotateX(360deg);
+  animation: fadeInDown 1.5s ease-in-out;
+  font-family: Playfair;
+}
+
+.card:hover {
+  scale: 0.9;
+  transition: all 300ms ease-in;
+  background-color: #2C3E50;
+  color: #F5F5F5;
+  
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Estilo del contenedor del video */
+.video-container {
+  position: relative;
+}
+
+/* Estilo para el texto encima del video */
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  height: 100%; 
+  width: 100%;
+  transform: translate(-50%, -50%); 
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  padding: 20px; 
+  border-radius: 10px;
+  animation: fadeInDown 1.5s ease-in-out;
+  transition: all 300ms ease-in;
+}
+
+.video-overlay h3,
+.video-overlay p {
+  margin: 1rem;
+}
+
+/* Para que el texto sea completamente legible */
+.video-overlay h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.video-overlay p {
+  font-size: 1rem;
+  color: #F5F5F5;
+}
+
+
+.video-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* table */
+
+.table {
+  margin-top: 20px;
+  font-family: Playfair;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* formulario */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  /* padding: 1rem; */
+} 
+
+.contenedor {
+  transition: all 500ms ease-in-out;
+}
+
+.contenedor img:hover {
+  transform: rotateY(360deg);
+  transition: all 500ms ease-in-out;
+}
+
+form {
+  background-color: #FFFFFF;
+  color: #333333;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in;
+  font-family: lora;
+}
+
+form:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  background-color: #F5F5F5;
+}
+
+ div .input {
+  transition: all 300ms ease-in;
+}
+/*
+div .input:hover {
+  color: wheat !important;
+  transform: rotateX(360deg) !important;
+} */
+
+form .form-control:hover {
+  background-color: #2C3E50;
+  color: #F5F5F5;
+  transition: all 300ms ease-in;
+}
+
+.btn-primary {
+  background-color: #8E44AD !important;
+  transition: all 300ms ease-in;
+  /* padding: 1rem; */
+}
+
+
+.btn:hover {
+    background-color: #2C3E50 !important;
+    scale: 0.9;
+    transition: all 300ms ease-in;
+  }
+
+
+img {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* footer */
+
+
+
+footer {
+  background-color: #2C3E50;
+  color: #F5F5F5;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+footer h5, footer p {
+  color: #FFFFFF;
+  font-family: lora;
+}
+
+footer h6 {
+  color: #2ECC71;
+  font-family: lora;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 1rem;
+}
+
+footer a i {
+  color: #8E44AD;
+  transition: all 300ms ease-in;
+}
+
+footer a i:hover {
+  color: #2ECC71; 
+  transition: all 300ms ease-in;
+}
+
+
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  list-style: none;
+}
+ 
+/* Animaciones */
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+

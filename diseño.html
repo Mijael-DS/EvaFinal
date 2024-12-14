@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño UI</title>
+    <!-- fuentes google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos1.css">
+    <link rel="icon" href="./img/icons8-desarrollo-web-64.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <!--nav navbar-dark bg-dark -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="logo">
+                    <img src="./img/icons8-desarrollo-web-64.png" alt="Logo">
+                </div>
+                <a class="navbar-brand" href="#">DevWeb</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-3">
+                        <li class="nav-item"><a class="nav-link" href="./index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./diseño.html" target="_blank"><i class="fa-solid fa-mobile-screen-button"></i>Diseño</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./fronted.html" target="_blank"><i class="fa-solid fa-code"></i>Frontend</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./backend.html" target="_blank"><i class="fa-solid fa-database"></i>Backend</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- video -->
+
+     <!-- SECCIÓN 01 -->
+     <section class="video-seccion">
+        <div class="video-container h-100">
+            <video autoplay muted loop>
+                <source src="./img/What's Figma_ [2019] - Figma (720p, h264, youtube).mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="contenido-video">
+            <h1>Bienvenidos al Mundo del Diseño</h1>
+            <a href="#seccion2" class="ingresar"><i class="fa-solid fa-eye"></i> Ingresar a mi página</a>
+        </div>
+    </section>
+
+    <!-- seccion main py-5-->
+    <main>
+        <section id="seccion2" class="container my-5 py-5 p-3">
+            <div class="row  section-container p-3">
+                <!-- Imagen align-items-center-->
+                <div class="sect-img col-md-6">
+                    <img src="./img/diseño_ui.jpg" alt="Diseño Creativo" class="img-fluid section-image shadow">
+                </div>
+                <!-- Texto -->
+                <div class="col-md-6 design-content">
+                    <h2 class="text-primar">Diseño Creativo</h2>
+                    <p>
+                        Transformamos tus ideas en <span class="fw-bold text-secondary">experiencias visuales únicas</span>.
+                        Nos especializamos en diseño atractivo que comunica efectivamente el mensaje de tu marca.
+                    </p>
+                    <a href="#" class="btn btn-primary">Descubre más</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5 py-5">
+            <div class="row section-container flex-md-row-reverse p-3">
+                <!-- Imagen align-items-center -->
+                <div class="sect-img col-md-6">
+                    <img src="./img/diseño_ui1.jpg" alt="Proyectos Personalizados" class="img-fluid section-image shadow">
+                </div>
+                <!-- Texto -->
+                <div class="col-md-6 design-content">
+                    <h2 class="text-primar">Proyectos Personalizados</h2>
+                    <p>
+                        Creamos diseños hechos a medida para cada cliente, garantizando que cada proyecto sea exclusivo y refleje
+                        tus valores empresariales. ¡Déjanos dar vida a tus ideas!
+                    </p>
+                    <a href="#" class="btn btn-primary">Ver Portafolio</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <!-- Galería -->
+    <section class="container py-4 p-3">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="./img/desing1.jpg" alt="Diseño 1">
+                <div class="overlay">
+                   
+                    <a href="https://mijael-ds.github.io/Ev03/" target="_blank">Robotica</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/desing2.jpg" alt="Diseño 2">
+                <div class="overlay">
+                    
+                    <a href="https://mijael-ds.github.io/PF-Cafe.github.io/" target="_blank">Pasteleria</a>
+                </div>
+            </div> 
+            <div class="gallery-item img3">
+                <img src="./img/desing3.jpg" alt="Frontend 1">
+                <div class="overlay">
+                    
+                    <a href="https://mijael-ds.github.io/PF-Dionicio.github.io/" target="_blank">Tienda</a>
+                </div>
+            </div>
+            <div class="gallery-item img4">
+                <img src="./img/desing4.jpg" alt="Backend 1">
+                <div class="overlay">
+                    
+                    <a href="https://mijael-ds.github.io/EvaParcial/" target="_blank">Audio</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Botón Llamativo -->
+        <div class="gallery-button">
+            <a href="https://github.com/Mijael-DS" target="_blank">Ver Más Proyectos</a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Redes Sociales -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase">Redes Sociales</h5>
+                    <div class="gap-3 p-3">
+                        <a href="https://www.facebook.com/" target="_blank" class="text-light">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://x.com/?lang=en" target="_blank" class="text-light">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="text-light">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Información Personal -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase">Información</h5>
+                    <p><strong>Nombre:</strong> Mijael Alexander Dionicio Salazar</p>
+                    <p><strong>Teléfono:</strong></p>
+                    <ul class="list-unstyled">
+                        <li>907 415 261</li>
+                        <li>900 564 543</li>
+                    </ul>
+                </div>
+    
+                <!-- Instituto y Carrera -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase">Instituto y Carrera</h5>
+                    <p><strong>Institución:</strong> Isil</p>
+                    <p><strong>Ubicación:</strong> Lima, Villa el Salvador</p>
+                    <p><strong>Carrera:</strong> Desarrollo de Software</p>
+                    <p><strong>Año:</strong> 2024</p>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Docente -->
+                <div class="col text-center">
+                    <h6 class="text-uppercase">Docente: Roberto Inga Alvarado</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+/* BACKEND */
+
+/* Sección Principal */
+.principal {
+    background-image: url('../img/backend2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ajusta la altura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed; /* Fijo para efecto parallax */
+}
+
+.contenidouno {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre elementos */
+}
+
+.contenidouno h1 {
+    /* margin: 10px 0; */
+    font-family: "Oswald", sans-serif;
+    font-size: 2em;
+    color: #f5f5f5;
+    text-decoration: underline;
+    animation: fadeInDown 1.5s ease-in-out; /* Animación de entrada */
+}
+
+.contenidouno p {
+    /* margin: 10px 0; */
+    color: #2ECC71;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/* Botones */
+.botones {
+    margin: 15px 0;
+}
+
+.button {
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 0 30px;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    /* transition: transform 0.3s ease-in-out; */
+    transition: all 300ms ease-in;
+}
+
+.button:hover {
+    background-color: #f5f5f5;
+    color: #8E44AD;
+    border-radius: 25px;
+    transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+    cursor: pointer;
+    /* transition: transform 0.3s ease-in-out; */
+    transition: all 300ms ease-in;
+}
+
+/* Tecnologías: Cards */
+.tech-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Igualar altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px); /* Elevar card */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-card i {
+    color: #8E44AD;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.tech-card i:hover {
+    color: #ffffff;
+    transform: scale(1.2); /* Aumentar tamaño */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Para que las cards ocupen alturas iguales */
+.row > .col-md-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    flex-grow: 1; /* Permite que todas las cards ocupen el mismo espacio vertical */
+}
+
+/* Imagen con zoom */
+
+/* Contenedor de la Imagen */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.backend-img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; /* Efecto suave */
+}
+
+.backend-img:hover {
+    transform: scale(0.9); /* Ampliar imagen al pasar el mouse */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Overlay */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fondo negro translúcido */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease-in-out; /* Transición suave */
+}
+
+.image-container:hover .image-overlay {
+    opacity: 1; /* Muestra el overlay al pasar el mouse */
+}
+
+/* Texto en el Overlay */
+.overlay-text {
+    color: #ffffff; 
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Botón en el Overlay */
+.image-overlay .btn {
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    background-color: #8E44AD;
+    color: #F5F5F5;
+    transition: all 300ms ease-in;
+}
+
+.image-overlay .btn:hover {
+    background-color: #f5a623;
+    color: #ffffff;
+    transition: all 300ms ease-in;
+}
+
+/* .btn {
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transition: transform 0.3s ease-in-out;
+} */
+
+/* Contenedor de sección (imagen y texto) */
+.section-container {
+    min-height: 70vh;
+}
+
+/* Tabla */
+.table-responsive {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f3f3f3; /* Resaltar fila */
+    transition: all 300ms ease-in;
+}
+
+/* Beneficios del Backend */
+#benefits {
+   /*  background-color: #f8f9fa; */
+    padding: 50px 0;
+}
+
+#benefits i {
+    font-size: 3rem;
+    color: #8E44AD;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#benefits i:hover {
+    transform: scale(1.2);
+    color: #ff9900;
+    transition: all 300ms ease-in;
+}
+
+#benefits h5 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
